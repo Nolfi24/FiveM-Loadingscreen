@@ -1,0 +1,70 @@
+<!--
+
+  Copyrigt Nolfi#1989 
+
+  Download: Github.com/Nolfi24
+  
+-->
+
+<head>
+  <title>Github.com/Nolfi24</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Permanent+Marker" />
+</head>
+
+<body scroll="no" style="overflow: hidden">
+<div class="glitch" data-text="LOADING">LOADING</div>
+
+
+<div class="text">
+<h1><span class="type"></span></h1>
+</div>
+
+<!-- <p id="message"></p>
+     <p id="percent"><span id="progress-bar-value">0</span>%</p> -->
+
+<progress id="progress" min="0" max="100" value="0"></progress>
+
+<audio id="music-music" autoplay>
+  <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<script type="text/javascript">
+  var music = document.getElementById("music");
+  music.volume = 0.04;
+  document.addEventListener('keypress', (event) => {
+      if (event.key == "space") {
+          if (music.paused) {
+              music.play();
+          } else {
+              music.pause();
+          }
+      } else if (event.key == "w") {
+          music.volume = music.volume - 0.05;
+      } else if (event.key == "s") {
+          music.volume = music.volume + 0.05;
+      }
+  });
+</script>
+
+<script src="js/main.js"></script>
+<script src="js/typed.js"></script>
+<script src="js/progressbar.js"></script>
+
+<script>
+
+    var typed = new Typed('.type', {
+      strings: [
+            'AntiRP - Roleplay', 
+            'Aktiv Staff',
+            'God RP',
+            'Whitelist'
+          ],
+          typeSpeed: 80,
+          backSpeed: 80,
+          loop: true
+    });
+
+</script>
+
+</body>
