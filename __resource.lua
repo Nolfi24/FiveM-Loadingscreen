@@ -6,6 +6,7 @@ files {
     'js/main.js',
     'js/progressbar.js',
     'js/typed.js',
+    'img/bg.png'
 }
 
 loadscreen 'index.html'
